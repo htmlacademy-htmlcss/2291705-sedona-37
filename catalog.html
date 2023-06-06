@@ -9,21 +9,20 @@
   <body>
     <div class="container">
       <header class="page-header">
+        <a class="header-logo"><img src="images/logo-Sedona.svg" alt="Логотип сайта Седона" width="138" height="64"></a>
         <nav class="navigation">
-          <a class="header-logo"><img src="images/logo-Sedona.svg" alt="Логотип сайта Седона" width="138"
-              height="64"></a>
           <ul class="navigation-list">
             <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
             <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
             <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item"><a class="navigation-link" href="#"><span
+          <ul class=" navigation-user">
+            <li class="navigation-user-item"><a class="navigation-link" href="#"><span
                   class="visually-hidden">Поиск</span></a>
             </li>
-            <li class="navigation-item"><a class="navigation-link" href="#"><span
+            <li class="navigation-user-item"><a class="navigation-link" href="#"><span
                   class="visually-hidden">Избраное</span></a></li>
-            <li class="navigation-item"><a href="#">Хочу сюда</a>
+            <li class="navigation-user-item"><a href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +37,7 @@
           </ul>
         </header>
         <section class="filter">
-          <img class="filter-background" src="images/filter.png" width="1200" height="412" alt="Размытый фон ">
+
           <form action="https://echo.htmlacademy.ru/">
             <fieldset class="infrastructure-group">
               <legend class="infrastructure-title">Инфраструктура:</legend>
@@ -97,6 +96,8 @@
             <p class="housing">Найдено гостиниц: 38</з>
               <select class="select-controls" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
               </select>
             <ul class="catalog-view">
               <li class="catalog-view-item">
@@ -121,6 +122,8 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/hotel-card/hotel-1.jpg" alt="Каньён" width="300"
                   height="212">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
               <p class="product-card-description">Гостиница</p>
@@ -136,6 +139,8 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/hotel-card/hotel-2.jpg" alt="Гора на фоне радуги"
                   width="300" height="212">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="product-card-description">Гостиница</p>
@@ -151,6 +156,8 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/hotel-card/hotel-3.jpg"
                   alt="Гора на фоне ясного вечернего неба" width="300" height="212">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <p class="product-card-description">Гостиница</p>
@@ -166,6 +173,8 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/hotel-card/hotel-4.jpg"
                   alt="Гора на фоне звездного ночного неба" width="300" height="212">
+              </a>
+              <a class="product-card-link" href="#">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <p class="product-card-description">Гостиница</p>
@@ -202,7 +211,7 @@
         <section class="subscribe">
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <img class="subscribe-picture" src="#" alt="Размытая картинка гор">
+
           <form action="https://echo.htmlacademy.ru/." method="post">
             <input type="text" name="email" value="Ваш email">
             <button type="submit">Подписаться</button>
