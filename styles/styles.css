@@ -18,7 +18,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  background: #F2F2F2;;
 }
+.container{
+width: 1200px;
+margin: 0 auto;
+background: #FFFFFF;
+}
+
 /* page-header index.html*/
 .page-header{
 font-weight: 700;
@@ -32,10 +39,11 @@ line-height: 24px;
 }
 
 .welcome-page{
-background-image: url("/images/index-background.jpg") ;
+background-image: url("../images/index-background.jpg") ;
 background-repeat: no-repeat;
-background-size: 1200px 485px;
-background-position: center;
+background-size: 100% auto;
+min-height: 485px;
+
 }
 /* advantages*/
 .advantages-title{
@@ -144,16 +152,23 @@ font-size: 20px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
+
 }
 
 /* subscribe */
+.subscribe{
+background-image: url("../images/subscribe.jpg");
+background-size: 100% auto;
+min-height: 412px;
+
+}
 .subscribe-title{
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
- /* color: #FFFFFF;*/
+  color: #FFFFFF;
 }
 .subscribe-description{
   font-style: normal;
@@ -161,7 +176,7 @@ text-transform: uppercase;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  /*color: #FFFFFF;*/
+  color: #FFFFFF;
 }
 
 /* footer*/
@@ -186,7 +201,7 @@ color: #000000;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  /*color: #FFFFFF;*/
+  color: #FFFFFF;
 }
 /* breadcrumbs */
 .breadcrumbs-item{
@@ -195,9 +210,15 @@ color: #000000;
 font-weight: 400;
 font-size: 16px;
 line-height: 21px;
- /*color: #FFFFFF;*/
+ color: #FFFFFF;
 }
  /* filter */
+ .container-filter{
+background-image: url("../images/filter.png");
+background-repeat: no-repeat;
+background-size: 100% auto;
+
+ }
 
  .infrastructure-title{
   font-style: normal;
@@ -205,7 +226,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 24px;
 text-transform: capitalize;
- /*color: #FFFFFF;*/
+ color: #FFFFFF;
  }
 
  .control-input{
@@ -213,7 +234,7 @@ text-transform: capitalize;
 font-weight: 400;
 font-size: 18px;
 line-height: 23px;
-/*color: #FFFFFF;*/
+color: #FFFFFF;
 
  }
 
@@ -223,7 +244,7 @@ line-height: 23px;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  /*color: #FFFFFF;*/
+  color: #FFFFFF;
  }
 
  .price-title{
@@ -232,7 +253,7 @@ line-height: 23px;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  /*color: #FFFFFF;*/
+  color: #FFFFFF;
  }
  .housing{
   font-style: normal;
@@ -302,4 +323,20 @@ color: #FFFFFF;
   line-height: 20px;
   text-transform: uppercase;
   color: #333333;
+}
+
+/* .subscribe-catalog */
+.subscribe-title-catalog{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.subscribe-description-catalog{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
