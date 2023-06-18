@@ -14,16 +14,33 @@ font-display: swap;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background: #F2F2F2;;
+  background: #F2F2F2;
+  height: 100%;
 }
 .container{
+display: flex;
+flex-direction: column;
 width: 1200px;
 margin: 0 auto;
 background: #FFFFFF;
+box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+min-height: 100%;
+
+}
+.main-index{
+flex-grow: 1;
+
+}
+.logo{
+display: flex;
+margin-left: 70px;
+
 }
 
 /* page-header index.html*/
@@ -37,15 +54,20 @@ line-height: 24px;
   text-decoration: none;
   color: #000000;
 }
+.navigation-list{
+display: flex;
+
+}
 
 .welcome-page{
+  background-color: #82B3D3;
 background-image: url("../images/index-background.jpg") ;
 background-repeat: no-repeat;
 background-size: 100% auto;
 min-height: 485px;
-
 }
 /* advantages*/
+
 .advantages-title{
 font-style: normal;
 font-weight: 700;
@@ -152,11 +174,12 @@ font-size: 20px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
-
+border-radius: 4px;
 }
 
 /* subscribe */
 .subscribe{
+  background-color: #82B3D3;
 background-image: url("../images/subscribe.jpg");
 background-size: 100% auto;
 min-height: 412px;
@@ -214,6 +237,7 @@ line-height: 21px;
 }
  /* filter */
  .container-filter{
+  background-color: #82B3D3;
 background-image: url("../images/filter.png");
 background-repeat: no-repeat;
 background-size: 100% auto;
