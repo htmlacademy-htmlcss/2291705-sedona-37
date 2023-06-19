@@ -14,38 +14,84 @@ font-display: swap;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background: #F2F2F2;;
+  background: #F2F2F2;
+  min-height: 100%;
+
 }
 .container{
+display: flex;
+flex-direction: column;
 width: 1200px;
 margin: 0 auto;
 background: #FFFFFF;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+min-height: 100vh;
+
 }
+.main-index{
+flex-grow: 1;
+
+}
+.welcome-page{
+  display: flex;
+  justify-content: center;
+  padding-top: 54px;
+}
+
+
 
 /* page-header index.html*/
 .page-header{
+ display: flex;
+flex-direction: row;
 font-weight: 700;
 font-size: 20px;
 line-height: 24px;
 
 }
+.navigation{
+display: flex;
+margin: auto;
+
+}
+.navigation-list{
+display: flex;
+margin: auto;
+list-style: none;
+}
+.navigation-user{
+  display: flex;
+  margin: auto;
+  list-style: none;
+}
+.navigation-user-item{
+  padding-right: 32px;
+}
+.navigation-item{
+  padding-right: 32px;
+}
+
 .navigation-link{
   text-decoration: none;
   color: #000000;
 }
 
+
 .welcome-page{
+  background-color: #82B3D3;
 background-image: url("../images/index-background.jpg") ;
 background-repeat: no-repeat;
-background-size: 100% auto;
+background-size: cover;
 min-height: 485px;
-
 }
 /* advantages*/
+
 .advantages-title{
 font-style: normal;
 font-weight: 700;
@@ -152,11 +198,12 @@ font-size: 20px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
-
+border-radius: 4px;
 }
 
 /* subscribe */
 .subscribe{
+  background-color: #82B3D3;
 background-image: url("../images/subscribe.jpg");
 background-size: 100% auto;
 min-height: 412px;
@@ -180,7 +227,10 @@ min-height: 412px;
 }
 
 /* footer*/
-
+.page-footer{
+  display: flex;
+  justify-content: space-between;
+}
 .phone{
 font-style: normal;
 font-weight: 400;
@@ -214,9 +264,10 @@ line-height: 21px;
 }
  /* filter */
  .container-filter{
+  background-color: #82B3D3;
 background-image: url("../images/filter.png");
 background-repeat: no-repeat;
-background-size: 100% auto;
+background-size: cover;
 
  }
 
@@ -339,4 +390,12 @@ color: #FFFFFF;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.pagination-list{
+  display: flex;
+justify-content: center;
+}
+.pagination-item{
+  list-style: none;
 }
