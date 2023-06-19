@@ -21,7 +21,8 @@ body {
   line-height: 21px;
   color: #000000;
   background: #F2F2F2;
-  height: 100%;
+  min-height: 100%;
+
 }
 .container{
 display: flex;
@@ -29,41 +30,64 @@ flex-direction: column;
 width: 1200px;
 margin: 0 auto;
 background: #FFFFFF;
-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
-min-height: 100%;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+min-height: 100vh;
 
 }
 .main-index{
 flex-grow: 1;
 
 }
-.logo{
-display: flex;
-margin-left: 70px;
-
+.welcome-page{
+  display: flex;
+  justify-content: center;
+  padding-top: 54px;
 }
+
+
 
 /* page-header index.html*/
 .page-header{
+ display: flex;
+flex-direction: row;
 font-weight: 700;
 font-size: 20px;
 line-height: 24px;
 
 }
+.navigation{
+display: flex;
+margin: auto;
+
+}
+.navigation-list{
+display: flex;
+margin: auto;
+list-style: none;
+}
+.navigation-user{
+  display: flex;
+  margin: auto;
+  list-style: none;
+}
+.navigation-user-item{
+  padding-right: 32px;
+}
+.navigation-item{
+  padding-right: 32px;
+}
+
 .navigation-link{
   text-decoration: none;
   color: #000000;
 }
-.navigation-list{
-display: flex;
 
-}
 
 .welcome-page{
   background-color: #82B3D3;
 background-image: url("../images/index-background.jpg") ;
 background-repeat: no-repeat;
-background-size: 100% auto;
+background-size: cover;
 min-height: 485px;
 }
 /* advantages*/
@@ -203,7 +227,10 @@ min-height: 412px;
 }
 
 /* footer*/
-
+.page-footer{
+  display: flex;
+  justify-content: space-between;
+}
 .phone{
 font-style: normal;
 font-weight: 400;
@@ -240,7 +267,7 @@ line-height: 21px;
   background-color: #82B3D3;
 background-image: url("../images/filter.png");
 background-repeat: no-repeat;
-background-size: 100% auto;
+background-size: cover;
 
  }
 
@@ -363,4 +390,12 @@ color: #FFFFFF;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.pagination-list{
+  display: flex;
+justify-content: center;
+}
+.pagination-item{
+  list-style: none;
 }
