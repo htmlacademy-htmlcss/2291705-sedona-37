@@ -540,13 +540,35 @@ body {
   color: #FFFFFF;
 }
 
-.product-list {
+/* .product-list {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   padding: 20px;
   gap: 16px;
   list-style: none;
+} */
+.product-list {
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  gap: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 40px 70px;
+
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+.product-card-wrapper {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .price-title {
