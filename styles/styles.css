@@ -50,13 +50,12 @@ body {
 }
 
 .header-logo {
+  position: relative;
   margin-bottom: -6px;
   z-index: 1;
-}
+  height: 70px;
 
-/* .logo {
-  margin-bottom: -6px;
-} */
+}
 
 /* page-header index.html*/
 .page-header {
@@ -89,7 +88,7 @@ body {
 }
 
 .navigation-item .navigation-link {
-  padding: 20px 16px;
+  padding: 20px 0;
 }
 
 .navigation-user {
@@ -102,11 +101,26 @@ body {
 }
 
 
+
+
 .navigation-link {
+  position: relative;
   display: block;
   text-decoration: none;
   color: #000000;
-  padding: 20px 16px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.navigation-item {
+  padding: 0 16px;
+}
+
+.navigation-user-item .navigation-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 12px;
 }
 
 .navigation-button {
@@ -121,7 +135,20 @@ body {
   background: #756157;
   color: #FFFFFF;
   padding: 8px 50px;
+  margin-left: 20px;
 }
+
+.navigation-link-current::before {
+  position: absolute;
+  content: "";
+  min-width: 100%;
+  height: 2px;
+  bottom: 0;
+  background-color: #756257;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 
 
@@ -132,7 +159,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 485px;
-  margin-bottom: 69px;
+  /* margin-bottom: 69px; */
+  /* padding: 0 0 69px; */
 }
 
 .welcome-page::after {
@@ -151,7 +179,7 @@ body {
 .advantages {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  /* gap: 25px; */
 
 }
 
@@ -162,6 +190,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 69px 0 25px;
 }
 
 .advantages-description {
@@ -170,8 +200,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-bottom: 69px;
+  /* margin-bottom: 69px; */
   color: #333333;
+  margin: 0;
+  padding: 0 0 69px;
 }
 
 /*advantages-list */
@@ -294,7 +326,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 64px 0 20px;
+  margin: 0;
+  padding: 64px 0 20px;
+  /* margin: 64px 0 20px; */
 }
 
 .service-description {
@@ -304,7 +338,9 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 0 0 64px;
+  margin: 0;
+  padding: 0 0 64px;
+  /* margin: 0 0 64px; */
 }
 
 
@@ -370,8 +406,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 20px;
-  margin-top: 96px;
+  margin: 0;
+  padding: 96px 0 20px;
 }
 
 .search-description {
@@ -381,7 +417,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin-bottom: 54px;
+  margin: 0;
+  padding: 0 0 54px;
 }
 
 .search-link {
@@ -421,8 +458,9 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;
-  margin-top: 96px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding-top: 96px;
+  padding-bottom: 20px;
 
 }
 
@@ -433,7 +471,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 54px;
+  margin: 0;
+  padding-bottom: 54px;
 
 }
 
@@ -453,8 +492,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 96px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding-top: 96px;
+  padding-bottom: 20px;
 }
 
 .subscribe-description-catalog {
@@ -462,7 +502,51 @@ body {
   font-size: 22px;
   font-family: PT Sans;
   line-height: 26px;
-  margin-bottom: 54px;
+  margin: 0;
+  padding-bottom: 54px;
+}
+
+.form-email {
+  display: flex;
+  width: 684px;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #F2F2F2;
+  border: none;
+  box-sizing: border-box;
+}
+
+.form-email input {
+  padding: 12px 20px;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6000000238418579;
+  flex-grow: 1;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.form-email:focus-within {
+  outline: #82B3D3;
+}
+
+.button-subscribe {
+  display: inline-block;
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px 50px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+
 }
 
 /* footer*/
@@ -546,7 +630,6 @@ body {
   background-image: url("../images/filter-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 50px;
 
 }
 
@@ -570,27 +653,47 @@ body {
 
 .catalog-filter {
   margin: 0;
-  padding: 0;
+  padding: 0 70px;
 
 
 }
 
 .wrapper-filter {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-  margin: 50px 70px 60px 70px;
+  padding: 50px 0 40px;
 }
 
 
 .catalog-view {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   list-style-type: none;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  /* padding-right: 70px; */
+}
+
+.view-toogle {
+  position: relative;
+  /* display: block; */
   width: 48px;
   height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-toogle-active {
+  border: 4px solid #000000;
+
 }
 
 
@@ -603,14 +706,20 @@ body {
   color: #FFFFFF;
 }
 
+.housing {
+  margin: 0;
+  margin-right: auto;
+}
+
 
 .product-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
   gap: 16px;
   list-style-type: none;
+  justify-content: space-between;
   margin: 0;
-  padding: 40px 70px;
+  padding: 0;
 
 }
 
@@ -624,6 +733,10 @@ body {
   grid-template-rows: 212px 1fr;
   gap: 16px 20px;
   box-sizing: border-box;
+  /* margin-bottom: 40px; */
+}
+
+.product-card:last-child {
   margin-bottom: 40px;
 }
 
@@ -781,6 +894,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333;
 }
 
 .pagination-wrapper {
@@ -788,19 +902,18 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 40px 70px 60px;
+  padding: 40px 0 60px;
+  border-top: 1px solid #e6e6e6;
 }
 
-.pagination-wrapper::after {
+/* .pagination-wrapper::after {
   position: absolute;
   content: "";
   width: 1060px;
   height: 1px;
   background-color: #e6e6e6;
   top: -15px;
-
-
-}
+} */
 
 .pagination-list {
   display: flex;
