@@ -1185,6 +1185,7 @@ body {
 
 /* modal */
 .modal {
+  /* position: absolute; */
   width: 717px;
   padding: 64px 70px;
   border: none;
@@ -1358,6 +1359,11 @@ body {
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
   border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.tooltip:hover .tooltip-text {
+  display: block;
 }
 
 .tooltip-text::before {
