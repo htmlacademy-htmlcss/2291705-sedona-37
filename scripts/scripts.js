@@ -16,6 +16,3 @@ dialog.addEventListener('click', event => {
     event.currentTarget.close()
   }
 })
-// let dialog = document.querySelector('.modal');
-
-// dialog.showModal();
