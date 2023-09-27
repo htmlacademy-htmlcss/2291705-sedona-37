@@ -8,7 +8,8 @@ for (let openButton of openButtons) {
     dialog.showModal();
   }
 };
-closeButton.onclick = function () {
+closeButton.onclick = function (event) {
+  event.stopPropagation()
   dialog.close();
 };
 dialog.addEventListener('click', event => {
